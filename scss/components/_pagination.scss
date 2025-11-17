@@ -1,0 +1,32 @@
+@use '../abstracts/variables';
+
+/* Pagination */
+
+.page-navigator {
+  list-style: none;
+  margin: 25px 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 0 4px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+
+    &:hover {
+      background: variables.$color-border;
+      text-decoration: none;
+    }
+  }
+
+  .current a {
+    color: variables.$color-text;
+    background: variables.$color-border;
+  }
+}

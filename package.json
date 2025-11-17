@@ -1,0 +1,29 @@
+{
+  "name": "replicon",
+  "version": "1.0.0",
+  "description": "Replicon 是一款基于 Typecho 默认主题 [Replica](https://github.com/typecho/typecho/tree/master/usr/themes/default) 开发的博客主题。设计中融入了犬戎个人的审美偏好，希望能在简约现代的基础上提升阅读体验。",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss/style.scss assets/css/style.css",
+    "watch": "sass --watch scss/style.scss:assets/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marshuni/Replicon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/marshuni/Replicon/issues"
+  },
+  "homepage": "https://github.com/marshuni/Replicon#readme",
+  "devDependencies": {
+    "sass": "^1.94.0"
+  },
+  "dependencies": {
+    "sass-migrator": "^2.4.2"
+  }
+}

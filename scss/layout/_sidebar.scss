@@ -1,0 +1,48 @@
+/* Sidebar */
+
+#secondary {
+  padding-top: 15px;
+  word-wrap: break-word;
+
+  &:has(#sidebar-toc) {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.widget {
+  margin-bottom: 30px;
+}
+
+.widget-list {
+  list-style: none;
+  padding: 0;
+
+  ul {
+    list-style: none;
+    padding-left: 1.25em;
+
+    ul {
+      list-style: none;
+      padding-left: 1.25em;
+
+      ul {
+        list-style: none;
+        padding-left: 1.25em;
+      }
+    }
+  }
+
+  li {
+    margin: 5px 0;
+    line-height: 1.6;
+
+    ul {
+      margin-left: 15px;
+    }
+  }
+}
+
+#sidebar-toc a {
+  border-bottom: none;
+}

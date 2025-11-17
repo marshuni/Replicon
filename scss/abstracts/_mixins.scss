@@ -1,0 +1,13 @@
+/* Mixins */
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin smooth {
+  transition: all .3s ease;
+}

@@ -1,0 +1,111 @@
+@use '../abstracts/variables';
+
+/* Global reset & base */
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: variables.$color-highlight;
+}
+
+body {
+  background-color: #FFF;
+  color: variables.$color-text;
+  font-family: variables.$font-serif;
+  font-size: 100%;
+}
+
+p {
+  margin-block-start: 0.96em;
+  margin-block-end: 0.96em;
+}
+
+a {
+  color: variables.$color-link;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: variables.$color-text;
+  }
+}
+
+pre,
+code {
+  background: variables.$color-bg-code;
+  font-family: variables.$font-code;
+  font-size: .85em;
+}
+
+code {
+  padding: .2em .4em;
+  color: #B94A48;
+}
+
+:not(pre) > code {
+  border-radius: variables.$radius-sm;
+}
+
+pre {
+  padding: 8px;
+  overflow: auto;
+  max-height: 500px;
+
+  code {
+    display: block;
+    padding: 3px 6px 2px 6px;
+    color: variables.$color-text;
+  }
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1.5em;
+  border-left: 6px solid #eee;
+  color: #666;
+}
+
+table {
+  width: auto;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 5px 10px;
+  }
+
+  thead tr {
+    border-bottom: 1px solid #eee;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  border: 1px solid #E9E9E9;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 10px 5px 8px;
+  line-height: 1.4;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Special link style */
+.post-meta a,
+.post-content a,
+.widget a,
+.comment-content a {
+  border-bottom: 1px solid variables.$color-border;
+
+  &:hover {
+    border-bottom-color: transparent;
+  }
+}

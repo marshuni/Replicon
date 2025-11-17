@@ -1,0 +1,28 @@
+@use '../abstracts/variables';
+
+/* Navigation */
+
+#nav-menu {
+  margin: 25px 0 0;
+  padding: 0;
+
+  a {
+    display: block;
+    margin-right: -1px;
+    padding: 0 20px;
+    border: 1px solid variables.$color-border;
+    border-bottom: none;
+    height: 32px;
+    line-height: 32px;
+    color: variables.$color-text;
+    float: left;
+
+    &:hover {
+      background: #F6F6F6;
+    }
+  }
+
+  .current {
+    background: #F6F6F6;
+  }
+}

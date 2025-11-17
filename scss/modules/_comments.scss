@@ -1,0 +1,95 @@
+@use '../abstracts/variables';
+
+/* Comments */
+
+#comments {
+  padding-top: 15px;
+}
+
+.comment-list,
+.comment-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-list li {
+  padding: 14px;
+  margin-top: 10px;
+  border: 1px solid variables.$color-border;
+
+  &.comment-level-odd {
+    background: #F6F6F3;
+  }
+
+  &.comment-level-even {
+    background: #FFF;
+  }
+
+  &.comment-by-author {
+    background: #FFFEF5;
+  }
+
+  .comment-reply {
+    text-align: right;
+    font-size: .92857em;
+  }
+}
+
+.comment-meta a {
+  color: variables.$color-muted;
+  font-size: .92857em;
+}
+
+.comment-author {
+  display: block;
+  margin-bottom: 3px;
+  color: variables.$color-text;
+
+  .avatar {
+    float: left;
+    margin-right: 10px;
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  cite {
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+.comment-list .respond {
+  margin-top: 15px;
+  border-top: 1px solid variables.$color-border;
+}
+
+.respond .cancel-comment-reply {
+  float: right;
+  margin-top: 15px;
+  font-size: .92857em;
+}
+
+#comment-form {
+  label {
+    display: block;
+    margin-bottom: .5em;
+    font-weight: bold;
+  }
+
+  .required:after {
+    content: " *";
+    color: #C00;
+  }
+}
+
+#comments button {
+  padding: 9px 11px;
+  border: none;
+  background-color: #f3f3f3;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d8d8d8;
+  }
+}

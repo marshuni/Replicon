@@ -1,0 +1,57 @@
+@use '../abstracts/variables';
+
+/* Content formatting */
+
+.post-content,
+.comment-content {
+  line-height: 1.56;
+  word-wrap: break-word;
+
+  h2 {
+    font-size: 1.28571em;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    box-shadow: 0 0 1.5rem variables.$color-border;
+    margin: 15px 5px;
+  }
+
+  a img {
+    background: #FFF;
+    position: relative;
+    bottom: -4px;
+  }
+
+  hr {
+    margin: 2em auto;
+    width: 100px;
+    border: 1px solid #E9E9E9;
+    border-width: 2px 0 0 0;
+  }
+}
+
+/* Align helpers */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+
+  img {
+    margin: 0 15px 0 0;
+  }
+}
+
+.alignright {
+  float: right;
+
+  img {
+    margin: 0 0 0 15px;
+  }
+}

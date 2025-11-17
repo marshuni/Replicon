@@ -1,0 +1,33 @@
+/* Responsive */
+
+@media (max-width: 767px) {
+  body {
+    font-size: 87.5%;
+  }
+
+  #nav-menu a {
+    float: none;
+    display: inline-block;
+    margin: 0 -2px;
+  }
+
+  #main {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+  }
+}
+
+@media (max-width: 768px) {
+  #header,
+  .post-title,
+  .post-meta,
+  .archive-title {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 952px;
+  }
+}
