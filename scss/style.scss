@@ -16,6 +16,8 @@
 /* Components */
 @use 'components/search';
 @use 'components/pagination';
+@use 'components/friend-card';
+@use 'components/prism-replicon';
 
 /* Modules */
 @use 'modules/post';
@@ -25,3 +27,4 @@
 /* Utils */
 @use 'utils/misc';
 @use 'utils/responsive';
+@use 'utils/print';

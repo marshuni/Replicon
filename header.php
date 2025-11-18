@@ -13,16 +13,11 @@
         ], '', ' - '); ?><?php $this->options->title(); ?></title>
 
     <!-- 使用url函数转换相关路径 -->
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('libs/normalize.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('libs/grid.css'); ?>">
     
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/font.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/style.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/friend-card.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/print.css'); ?>">
-
     <link rel="stylesheet" href="<?php $this->options->themeUrl('libs/prism/prism.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/prism-replicon.css'); ?>">
+    
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('utils/cjk-latin-spacing/cjk-latin-spacing.css'); ?>">
 
     <!-- 通过自有函数输出HTML头部信息 -->
