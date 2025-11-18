@@ -452,7 +452,7 @@ textarea {
 html {
   /* 网格小方格大小 */
   background-size: 7px 7px;
-  background-color: #F6F6F6;
+  background-color: #ffffff;
   /* 网格线颜色（黑色 4% 透明度） */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
 }
@@ -541,7 +541,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 .site-name a:hover {
-  color: #F6F6F6; /* 字体高亮颜色 */
+  color: #ffffff; /* 字体高亮颜色 */
   background-color: #2e405b; /* 你想要的深色 */
   text-decoration-color: #2e405b; /* 与背景同色 */
 }

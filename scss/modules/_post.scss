@@ -12,6 +12,22 @@
   font-size: 1.4em;
 }
 
+.post-title a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none; /* 默认不下划线，可根据需求打开 */
+  padding: 2px 4px;
+
+  // transition: 
+  //   box-shadow .3s cubic-bezier(.4,0,.2,1),
+  //   color .3s cubic-bezier(.4,0,.2,1);
+}
+
+// .post-title a:hover {
+//   color: variables.$color-bg-light;            /* 字体高亮颜色 */
+//   background-color: variables.$color-theme; /* 你想要的深色 */
+// }
+
 .post-meta {
   margin-top: -0.5em;
   color: variables.$color-muted;
