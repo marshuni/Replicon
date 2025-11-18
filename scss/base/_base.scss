@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 /* Basic helper classes */
 
 .hidden {
@@ -27,4 +29,15 @@
 
 .invisible {
   visibility: hidden;
+}
+
+html {
+  /* 网格小方格大小 */
+  background-size: 7px 7px;
+  background-color: variables.$color-bg-light;
+
+  /* 网格线颜色（黑色 4% 透明度） */
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
 }

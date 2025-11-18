@@ -3,26 +3,31 @@
 /* Navigation */
 
 #nav-menu {
-  margin: 25px 0 0;
+  margin: 7px 0 0;
   padding: 0;
-
   a {
-    display: block;
-    margin-right: -1px;
-    padding: 0 20px;
-    border: 1px solid variables.$color-border;
-    border-bottom: none;
-    height: 32px;
-    line-height: 32px;
+    display: inline-block;
+    padding: 4px 0;
+    border: none;
+    height: auto;
+    line-height: normal;
     color: variables.$color-text;
-    float: left;
+    float: none;
+    margin-right: 0;
+    text-decoration: none;
 
     &:hover {
-      background: #F6F6F6;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      background: none;
     }
   }
 
+  /* 当前页面：加粗 + 下划线 */
   .current {
-    background: #F6F6F6;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    background: none;
   }
 }

@@ -8,15 +8,32 @@
 }
 
 #logo {
-  color: #333;
-  font-size: 2.5em;
-
   img {
     max-height: 64px;
   }
 }
 
 .description {
-  margin: 0.6em 0 0.7em 0;
+  padding: 0px 8px;
+  margin: 1em 0 0.7em 0;
   color: variables.$color-muted;
+}
+
+.site-name a {
+  padding: 2px 8px;
+  color: variables.$color-theme;  
+  font-size: 2.5em;
+  // text-decoration: none;
+  // text-decoration-thickness: .08em;
+  // text-underline-offset: 5px;
+  transition: all .3s cubic-bezier(.4, 0, .2, 1);
+}
+.site-name a:hover {
+  color: variables.$color-bg-light;            /* 字体高亮颜色 */
+  background-color: variables.$color-theme; /* 你想要的深色 */
+  text-decoration-color: variables.$color-theme; /* 与背景同色 */
+}
+
+.clearfix::after {
+  padding-top: 5px;
 }
